@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+    <div>
+        <div th:text="${#strings.listJoin(numbers, '|')}"></div>
+        <div th:text="|Average:  ${#aggregates.avg(numbers)}|" ></div>
+        <div th:text="|Sum:  ${#aggregates.sum(numbers)}|" ></div>
+    </div>
+</body>
+</html>
